@@ -7,13 +7,35 @@ body{
 }
 
 .navbar {
-  background-color:black;
   display: flex;
   align-items: center;
   color: #fff;
   height: 94px;
+  position: relative;
 }
 
+.header {
+  min-height: 100vh;
+}
+
+.header-image {
+  background-image: url('../img/header-bg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative; /*позиция родителя*/
+}
+
+.header-image::before {
+content: "";
+position: absolute; /*позиционирование относительно родителя*/
+background: rgba(41, 45, 51, 0.6);
+top: 0; /*прилигание плажки к верху экрана*/
+left:0;
+width: 100%;
+height: 100%;
+z-index: 0; /*позиция в слоях*/
+}
 .header-logo {
   padding: 25px 50px;
 }
