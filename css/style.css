@@ -2,8 +2,20 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Bebas Neue Book';
+  src: url('../fonts/BebasNeueBook.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+
 body{
   font-family: "Noto Sans", sans-serif;
+}
+
+.container {
+ max-width: 1140px;
+ margin: auto;
 }
 
 .navbar {
@@ -12,6 +24,7 @@ body{
   color: #fff;
   height: 94px;
   position: relative;
+  border-bottom: 1px solid rgba(235, 235, 240, 0.2); /*рамка снизу*/
 }
 
 .header {
@@ -38,6 +51,8 @@ z-index: 0; /*позиция в слоях*/
 }
 .header-logo {
   padding: 25px 50px;
+  border-right: 1px solid rgba(235, 235, 240, 0.2);
+  height: 100%; /*высота относительно родителя*/
 }
 
 .header-nav {
@@ -71,19 +86,59 @@ z-index: 0; /*позиция в слоях*/
 
 .button {
   font-weight: 600;
-font-size: 16px;
-line-height: 160%;
-color: #FFFFFF;
-background: #3A71D1;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 25px 60px;
-gap: 10px;
-border: none;
+  font-size: 16px;
+  line-height: 160%;
+  color: #FFFFFF;
+  background: #3A71D1;
+  padding: 25px 60px;
+  border: none;
+  display: inline-block; /*выровняла кнопку 2*/
+  cursor: pointer; /*меняет стиль курсора при наведении на кнопку*/
+}
+
+.navbar-button {
 flex-shrink: 0;
+height: 100%;
 }
 
 .header-button {
   height: 100%;
 }
+
+.seporator {
+  background: #5C8EE6;
+  width: 150px;
+  height: 2px;
+}
+
+.header-content {
+  padding-top: 150px;
+  position: relative;
+  z-index: 1;
+  color:#fff;
+}
+
+.header-title {
+  max-width: 1080px;
+  font-family: 'Bebas Neue Book';
+  margin: 30px 0;
+  }
+
+.header-text {
+  max-width: 720px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  margin-bottom: 50px;
+}
+
+.header-features {
+  display: flex; /*выравнивает в линию*/
+  height: 168px;
+  padding: 0; /*отключает настройку отступов по краям*/
+  margin-top: 100px;
+  color: #fff;
+  }
+
+  
