@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
 @font-face {
   font-family: 'Bebas Neue Book';
   src: url('../fonts/BebasNeueBook.woff') format('woff');
@@ -15,7 +18,7 @@ body{
 }
 
 .container {
- max-width: 1440px;
+ max-width: 90rem;
  margin: auto;
 }
 
@@ -23,7 +26,7 @@ body{
   display: flex;
   align-items: center;
   color: #fff;
-  height: 94px;
+  height: 5.875rem;
   position: fixed;
   width: 100%;
   left: 0;
@@ -69,14 +72,14 @@ body{
   display: flex; /* гибкость*/
   flex-basis: 100%; /* ширина большая*/
   list-style: none; /* отключение точек*/
-  padding: 0 50px; /*отключение отступов 50 означает отступ по краям в пх*/
+  padding: 0 3.125rem; /*отключение отступов 50 означает отступ по краям в пх*/
   margin: 0;
 }
 
 .header-nav-link {
   text-decoration: none;
-  font-size: 10px;
-  margin-right: 50px;
+  font-size: .625rem;
+  margin-right: 3.125rem;
   color: inherit;
 }
 
@@ -84,18 +87,18 @@ body{
   flex-shrink: 0;  /*означает что не надо скукоживать-смещать */
   display: flex;
   align-items: center;
-  gap: 10px;  /*отступ на 10 пх*/
-  margin-right: 50px;
+  gap: .625rem;  /*отступ на 10 пх*/
+  margin-right: 3.125rem;
 }
 
 .header-phone-link {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   color: inherit;
 }
 
 .button {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 160%;
   color: #FFFFFF;
   background: #3A71D1;
@@ -115,66 +118,66 @@ height: 100%;
 
 .seporator {
   background: #5C8EE6;
-  width: 150px;
-  height: 2px;
+  width: 9.375rem;
+  height: .125rem;
 }
 
 .header-content {
-  padding-top: 150px;
+  padding-top: 9.375rem;
   position: relative;
   z-index: 1;
   color:#fff;
-  padding: 150px 100px;
+  padding: 9.375rem 6.25rem;
   
 }
 
 .header-title {
-  max-width: 1080px;
+  max-width: 67.5rem;
   font-family: 'Bebas Neue Book';
-  margin: 30px 0;
+  margin: 1.875rem 0;
 }
 
 .header-text {
-  max-width: 720px;
+  max-width: 45rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 160%;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .header-features {
   display: flex; /*выравнивает в линию*/
-  height: 168px;
+  height: 10.5rem;
   padding: 0; /*отключает настройку отступов по краям*/
-  margin-top: 100px;
+  margin-top: 6.25rem;
   list-style: none;
   color: #fff;
   position: relative; /*вылазиет вперед не остается в тени*/
   }
 
 .header-features-item {
-  padding: 30px 50px;
+  padding: 1.875rem 3.125rem;
   border: 1px solid rgba(235, 235, 240, 0.2);
   
   }
   .header-features-text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 160%;
   }
   .header-features-item:not(:last-child) {
     border-right: none;
   }
 .section{
-  padding: 50px 100px;
-  margin-top: 150px; /*отступ сверху*/
-  margin-bottom: 150px; /*отступ снизу*/
+  padding: 3.125rem 6.25rem;
+  margin-top: 9.375rem; /*отступ сверху*/
+  margin-bottom: 9.375rem; /*отступ снизу*/
   }
 .section-title {
   font-family: 'Bebas Neue Book';
   color: #292D33;
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 120%;
   }
 
@@ -182,16 +185,16 @@ height: 100%;
   display: flex;
   list-style: none;
   padding: 0;
-  gap: 30px; /*отступ между блоками текста*/
+  gap: 1.875rem; /*отступ между блоками текста*/
   }
 
   .steps-item {
-    max-width: 330px;
+    max-width: 20.625rem;
   }
 
   .steps-num {
     font-weight: 400;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 120%;
     color: #5C8EE6;
     font-family: 'Bebas Neue Book';
@@ -201,29 +204,29 @@ height: 100%;
 
   .steps-num::after {
     content:"";
-    height: 1px;
+    height: .0625rem;
     background: #EBEBF0;
     width: 100%;
-    margin-left: 30px;
+    margin-left: 1.875rem;
 
   }
 
   .steps-title {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 1.875rem;
+    margin-bottom: .625rem;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 1.75rem;
     line-height: 160%;
     color: #292D33;
   }
   
   .steps-text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 160%;
     color: #828A99;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: .625rem;
+    margin-bottom: 1.25rem;
   }
  
   .steps-link {
@@ -231,16 +234,20 @@ height: 100%;
     align-items: center;
     text-decoration: none;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 160%;
     color: #5C8EE6;
   }
 
   .steps-link:before {
     content:"";
-    height: 1px;
+    height: .0625rem;
     background: #5C8EE6;
-    width: 40px;
-    margin-right: 20px;
+    width: 2.5rem;
+    margin-right: 1.25rem;
   }
-
+@media (max-width:1600x) {
+   html {
+    font-size: 14px;
+   }
+}
