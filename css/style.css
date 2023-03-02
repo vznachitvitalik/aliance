@@ -45,6 +45,10 @@ body{
   fill:#292D33;
 }
 
+.header {
+  width: 100%;
+}
+
 .header-image {
   background-image: url('../img/header-bg.jpeg');
   background-size: cover;
@@ -76,10 +80,14 @@ body{
   margin: 0;
 }
 
+.header-nav-item:not(last-child) {
+  margin-right: 3.125rem;
+}
+
 .header-nav-link {
   text-decoration: none;
   font-size: .625rem;
-  margin-right: 3.125rem;
+
   color: inherit;
 }
 
@@ -246,8 +254,19 @@ height: 100%;
     width: 2.5rem;
     margin-right: 1.25rem;
   }
-@media (max-width:1600x) {
+@media (max-width:1700x) {
    html {
     font-size: 14px;
    }
+   .header-image {
+    background-position: center;
+   }
+}
+@media (max-width:1460x) {
+  html {
+   font-size: 13px;
+  }
+  .header-image {
+   background-position: center;
+  }
 }
