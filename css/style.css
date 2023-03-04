@@ -18,15 +18,14 @@ body{
 }
 
 .container {
- max-width: 90rem;
- margin: auto;
+  margin: 0 240px;
 }
 
 .navbar {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #fff;
-  height: 5.875rem;
   position: fixed;
   width: 100%;
   left: 0;
@@ -45,10 +44,6 @@ body{
   fill:#292D33;
 }
 
-.header {
-  width: 100%;
-}
-
 .header-image {
   background-image: url('../img/header-bg.jpeg');
   background-size: cover;
@@ -60,7 +55,7 @@ body{
 .header-image::before {
   content: "";
   position: absolute; /*позиционирование относительно родителя*/
-  background: rgba(41, 45, 51, 0.6);
+  background: rgba(41, 45, 51, 0.7);
   top: 0; /*прилигание плажки к верху экрана*/
   left:0;
   width: 100%;
@@ -68,27 +63,28 @@ body{
   z-index: 0; /*позиция в слоях*/
 }
 .header-logo {
+  padding: 19px 50px;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
    /*высота относительно родителя*/
 }
 
 .header-nav {
-  display: flex; /* гибкость*/
+  display: flex;
+  justify-content: space-between;
   flex-basis: 100%; /* ширина большая*/
   list-style: none; /* отключение точек*/
-  padding: 0 3.125rem; /*отключение отступов 50 означает отступ по краям в пх*/
-  margin: 0;
-}
-
-.header-nav-item:not(last-child) {
-  margin-right: 3.125rem;
+  margin-right: 5%;
 }
 
 .header-nav-link {
   text-decoration: none;
-  font-size: .625rem;
 
   color: inherit;
+}
+
+.header-nav-link:hover {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #5C8EE5;
 }
 
 .header-phone {
@@ -100,28 +96,36 @@ body{
 }
 
 .header-phone-link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   font-size: 1rem;
   color: inherit;
 }
 
+.header-phone-icon {
+  margin-right: 7px;
+}
+
 .button {
-  font-size: 1rem;
-  line-height: 160%;
+  font-size: 16px;
   color: #FFFFFF;
-  background: #3A71D1;
+  background: #5C8EE5;
   border: none;
-  display: inline-block; /*выровняла кнопку 2*/
   cursor: pointer; /*меняет стиль курсора при наведении на кнопку*/
 }
 
 .navbar-button {
-flex-shrink: 0;
-height: 100%;
+  flex-shrink: 0;
+  padding: 34px 50px;
 }
 
-.header-button {
-  height: 100%;
+.button-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 313px;
+  padding: 25px 60px;
 }
 
 .seporator {
@@ -131,15 +135,16 @@ height: 100%;
 }
 
 .header-content {
-  padding-top: 9.375rem;
+  padding-top: 272px;
   position: relative;
   z-index: 1;
   color:#fff;
-  padding: 9.375rem 6.25rem;
-  
+
 }
 
 .header-title {
+  line-height: 93px;
+  font-size: 80px;
   max-width: 67.5rem;
   font-family: 'Bebas Neue Book';
   margin: 1.875rem 0;
@@ -149,7 +154,6 @@ height: 100%;
   max-width: 45rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
   line-height: 160%;
   margin-bottom: 3.125rem;
 }
@@ -158,7 +162,7 @@ height: 100%;
   display: flex; /*выравнивает в линию*/
   height: 10.5rem;
   padding: 0; /*отключает настройку отступов по краям*/
-  margin-top: 6.25rem;
+  margin-top: 98px;
   list-style: none;
   color: #fff;
   position: relative; /*вылазиет вперед не остается в тени*/
@@ -174,9 +178,7 @@ height: 100%;
     font-size: 1rem;
     line-height: 160%;
   }
-  .header-features-item:not(:last-child) {
-    border-right: none;
-  }
+
 .section{
   padding: 3.125rem 6.25rem;
   margin-top: 9.375rem; /*отступ сверху*/
@@ -230,7 +232,6 @@ height: 100%;
   
   .steps-text {
     font-weight: 400;
-    font-size: 1rem;
     line-height: 160%;
     color: #828A99;
     margin-top: .625rem;
@@ -242,7 +243,6 @@ height: 100%;
     align-items: center;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
     line-height: 160%;
     color: #5C8EE6;
   }
@@ -254,19 +254,54 @@ height: 100%;
     width: 2.5rem;
     margin-right: 1.25rem;
   }
-@media (max-width:1700x) {
+
+#menu__toggle {
+  display: none;
+}
+
+@media (max-width:1700px) {
    html {
     font-size: 14px;
    }
-   .header-image {
-    background-position: center;
+
+   .header-logo {
+     display: none;
    }
 }
-@media (max-width:1460x) {
-  html {
-   font-size: 13px;
+
+@media screen and (max-width: 1400px) {
+  .container {
+    margin: 0 50px;
   }
-  .header-image {
-   background-position: center;
+
+  .header-title {
+    font-size: 60px;
+    line-height: 63px;
   }
+
+  .header-nav {
+    margin-right: 1%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    margin: 0 50px;
+  }
+
+  .header-title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 960px) {
+
+}
+
+@media screen and (min-width: 667px) {
+
 }
