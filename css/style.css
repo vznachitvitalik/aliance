@@ -255,17 +255,9 @@ body{
     margin-right: 1.25rem;
   }
 
-#menu__toggle {
-  display: none;
-}
-
 @media (max-width:1700px) {
    html {
     font-size: 14px;
-   }
-
-   .header-logo {
-     display: none;
    }
 }
 
