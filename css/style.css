@@ -349,6 +349,7 @@ body{
   height: 1px;
   background-color: #fff;
   width: 100%;
+  transition: transform 0.2s; /*плавность перехода*/
   }
   .mobile-menu-line:nth-child(2){
     width: 80%;
@@ -436,6 +437,15 @@ body{
     font-size: 14px;
     line-height: 160%; 
     color: #292D33;
+   }
+   .close-menu .mobile-menu-line:nth-child(2) {   /*меняет местами линии занка меню*/
+    display: none;
+   }
+   .close-menu .mobile-menu-line:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+    }
+   .close-menu .mobile-menu-line:nth-child(1) {
+    transform: rotate(-45deg);
    }
 }
 
