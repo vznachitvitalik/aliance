@@ -16,22 +16,22 @@ const lightModeOff = (event) => {
 
 const openMenu = (event) => {    /*функция открывания меню */
   menu.classList.add("is-open");  /*вешает класс is-open */
-  mMenuToogle.classList.add ("close-menu");
-  document.body.style.over="hidden";  // запрещаем прокрутку сайта 
-  lightModeOn ();
+  mMenuToggle.classList.add("close-menu");
+  document.body.style.over = "hidden";  // запрещаем прокрутку сайта
+  lightModeOn();
 };
 const closeMenu = (event) => {    /*функция закрываания меню */
   menu.classList.remove("is-open");  /*убирает класс is-open */
-  mMenuToogle.classList.remove ("close-menu");
-  document.body.style.over="";  // возвращает прокрутку сайта 
-  lightModeOff ();
+  mMenuToggle.classList.remove("close-menu");
+  document.body.style.over = "";  // возвращает прокрутку сайта
+  lightModeOff();
 };
 
-window.addEventListener("scroll", ()=>{
-this.scrollY > 1 ? lightModeOn () : lightModeOff ();
+window.addEventListener("scroll", () => {
+ this.scrollY > 1 ? lightModeOn() : lightModeOff();
 });
 
-mMenuToggle.addEventListener("click", (event)=> {
+mMenuToggle.addEventListener("click", (event) => {
   event.preventDefault();
-  menu.classList.contains ("is-open") ? closeMenu () : openMenu ();
+  menu.classList.contains("is-open") ? closeMenu() : openMenu();
 });
