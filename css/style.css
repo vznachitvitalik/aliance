@@ -156,7 +156,6 @@ body{
   position: relative;
   z-index: 1;
   color:#fff;
-
 }
 
 .header-title {
@@ -188,19 +187,20 @@ body{
 .header-features-item {
   padding: 1.875rem 3.125rem;
   border: 1px solid rgba(235, 235, 240, 0.2);
-  
-  }
-  .header-features-text {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 160%;
   }
 
-.section{
+.header-features-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+}
+
+.section {
   padding: 3.125rem 6.25rem;
   margin-top: 9.375rem; /*отступ сверху*/
   margin-bottom: 9.375rem; /*отступ снизу*/
   }
+
 .section-title {
   font-family: 'Bebas Neue Book';
   color: #292D33;
@@ -303,7 +303,7 @@ body{
 }
 
 @media (max-width:1200px) {
-  .container{
+  .container {
     min-width: 1120px;
   }
   .header-phone {
@@ -312,7 +312,7 @@ body{
   .navbar {
     height: 80px;
   }
-  .navbar-button{
+  .navbar-button {
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -329,9 +329,10 @@ body{
     display: none;
   }
   .header-logo {
-  flex-grow: 1;
-  justify-content: center;
+    flex-grow: 1;
+    justify-content: center;
   }
+
   .mobile-menu-toggle {
     width: 80px;
     height: 100%;
@@ -342,9 +343,11 @@ body{
     padding: 22px;
     border-right:1px solid rgba(235, 235, 240, 0.2); /*полоска справа*/
   }
-  .navbar-light .mobile-menu-line{
+
+  .navbar-light, .mobile-menu-line{
     background-color: #333;
   }
+
   .mobile-menu-line {
   height: 1px;
   background-color: #fff;
@@ -354,20 +357,22 @@ body{
   .mobile-menu-line:nth-child(2){
     width: 80%;
   }
-  .navbar-button .button-text {
-  display: none;
+  .navbar-button,
+  .button-text {
+    display: none;
   }
-  .navbar-button .button-icon {
+  .navbar-button,
+  .button-icon {
     fill:#fff;
   }
   .mobile-menu {
-    display: block; /*меню возвращается*/
+    display: none; /*меню возвращается*/
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     bottom:0;
-    width; 100%;
+    width: 100%;
     height: 100%;
     overflow-y: auto;
     z-index: 2;
@@ -376,9 +381,11 @@ body{
     padding-left: 24px;
     padding-right: 24px;
   }
-  .mobile-menu.is-open {
+
+  .is-open {
     display: block;    /*при нажатии на меню, появляется меню*/
   }
+
   .mobile-menu-nav {
     list-style: none;
     padding: 0;
@@ -420,9 +427,11 @@ body{
     padding-top: 32px;
     margin-bottom: 24px;
   }
+
    .mobile-seporator {
     background: #EBEBF0;
    }
+
    .mobile-info {
     display: flex;
     align-items: center;
@@ -438,13 +447,19 @@ body{
     line-height: 160%; 
     color: #292D33;
    }
-   .close-menu .mobile-menu-line:nth-child(2) {   /*меняет местами линии занка меню*/
-    display: none;
+
+   .close-menu,
+   .mobile-menu-line:nth-child(2) {   /*меняет местами линии занка меню*/
+    /*display: none;*/
    }
-   .close-menu .mobile-menu-line:nth-child(1) {
+
+   .close-menu,
+   .mobile-menu-line:nth-child(1) {
     transform: rotate(45deg) translateY(10px);
     }
-   .close-menu .mobile-menu-line:nth-child(1) {
+
+   .close-menu,
+   .mobile-menu-line:nth-child(1) {
     transform: rotate(-45deg);
    }
 }
