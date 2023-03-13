@@ -455,13 +455,14 @@ body{
 
    .close-menu,
    .mobile-menu-line:nth-child(1) {
-    transform: rotate(45deg) translateY(10px);
+    
     }
 
    .close-menu,
-   .mobile-menu-line:nth-child(1) {
-    transform: rotate(-45deg);
+   .mobile-menu-line:nth-child(3) {
+    
    }
 }
+
 
 
