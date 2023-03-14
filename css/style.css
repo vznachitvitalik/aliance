@@ -185,9 +185,25 @@ body{
   }
 
 .header-features-item {
-  padding: 1.875rem 3.125rem;
+  padding: 28px 50px;
+  max-height: 100%;
   border: 1px solid rgba(235, 235, 240, 0.2);
   }
+  .slider-buttons {
+    display: none;
+    height: 44px;
+  }
+  .slider-button-prev,
+  .slider-button-next {
+    height: 100%;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+
 
 .header-features-text {
   font-weight: 400;
@@ -463,6 +479,30 @@ body{
     
    }
 }
+
+@media (max-width: 768px){
+ .container {
+  max-width: 640px;
+ }
+ .header-title {
+  font-size: 64px;
+ }
+ .header-content {
+  padding-top: 48px;
+ }
+}
+
+@media (max-width: 576px){
+  .container {
+   max-width: 90%;
+  }
+  .header-title {
+   font-size: 32px;
+  }
+  .header-content {
+   padding-top: 32px;
+  }
+ }
 
 
 
