@@ -292,6 +292,23 @@ body{
     margin-right: 1.25rem;
   }
 
+  .steps-button {
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+  }
+
+  .steps-button-prev,
+  .steps-button-next {
+    background: #5C8EE6;
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
 @media (max-width:1700px) {
    html {
     font-size: 14px;
@@ -334,6 +351,9 @@ body{
   }
   .navbar-button {
     height: 79px;
+  }
+  .slider-buttons {
+    display: flex;
   }
   .slider-buttons {
     display: flex;
