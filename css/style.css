@@ -22,7 +22,7 @@ body{
 }
 
 .container {
-  margin: 0 240px;
+
 }
 
 .navbar {
@@ -307,6 +307,17 @@ body{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    flex-basis: 33%;
+    
+  }
+  .card-image {
+
   }
 
 @media (max-width:1700px) {
