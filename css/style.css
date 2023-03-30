@@ -92,13 +92,14 @@ body{
 
 .header-nav-link {
   text-decoration: none;
-
   color: inherit;
+  position: relative;
 }
 
 .header-nav-link:hover {
   padding-bottom: 10px;
   border-bottom: 1px solid #5C8EE5;
+  transition: transform 0.2s;
 }
 
 .header-phone {
@@ -286,13 +287,17 @@ body{
 
   .steps-link:before {
     content:"";
-    height: .0625rem;
+    height: 1px;
     background: #5C8EE6;
-    width: 2.5rem;
-    margin-right: 1.25rem;
+    width: 40px;
+    margin-right: 16px;
+    transition: width 0.2s;
+  }
+  .steps-link:hover:before {
+    width: 60px;
   }
 
-  .steps-button {
+  .steps-buttons {
     display: flex;
     height: 40px;
     justify-content: flex-end;
@@ -314,8 +319,22 @@ body{
   }
   .card {
     flex-basis: 33%;
-    
+    border: 1px solid #f1f1f5;
+    position: relative;
   }
+
+  .card-content{
+  padding: 40px 50px;
+  }
+
+  .card-title {
+
+  }
+
+  .card-text {
+
+  }
+
   .card-image {
 
   }
@@ -368,6 +387,9 @@ body{
   }
   .slider-buttons {
     display: flex;
+  }
+  .card {
+    flex-basis: 50%;
   }
 }
 
@@ -514,24 +536,3 @@ body{
     
    }
 }
-
-@media (max-width: 768px){
- .header-title {
-  font-size: 64px;
- }
- .header-content {
-  padding-top: 48px;
- }
-}
-
-@media (max-width: 576px){
-  .header-title {
-   font-size: 32px;
-  }
-  .header-content {
-   padding-top: 32px;
-  }
- }
-
-
-
