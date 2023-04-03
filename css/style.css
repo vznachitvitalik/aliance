@@ -276,7 +276,7 @@ body{
     margin-bottom: 1.25rem;
   }
  
-  .steps-link {
+  .button-link {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -285,7 +285,7 @@ body{
     color: #5C8EE6;
   }
 
-  .steps-link:before {
+  .button-link:before {
     content:"";
     height: 1px;
     background: #5C8EE6;
@@ -293,7 +293,7 @@ body{
     margin-right: 16px;
     transition: width 0.2s;
   }
-  .steps-link:hover:before {
+  .button-link:hover:before {
     width: 60px;
   }
 
@@ -388,7 +388,51 @@ body{
   .trademark-card:hover .trademark-card-title {
     color:#5C8EE6;
   }
-
+.founder {
+ position: relative;
+ min-height: 660px;
+}
+.founder-photo {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+}
+.founder-content {
+  max-width: 500px;
+}
+.founder-content-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.founder-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  color:#828A99;
+}
+.clients-wrapper {
+  display: flex;
+}
+.clients-content{
+flex-basis: 50%;
+}
+.clients-list {
+  list-style-type: none;
+  padding: 0;
+  columns: 2 auto;
+}
+.clients-list-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #292D33;
+}
 @media (max-width:1700px) {
    html {
     font-size: 14px;
@@ -443,6 +487,12 @@ body{
   }
   .trademark-card {
     grid-template-columns: auto auto;
+  }
+  .founder-content {
+    max-width: 560px;
+  }
+  .clients-content {
+    flex-basis: 60%;
   }
 }
 
@@ -606,6 +656,11 @@ body{
   .card {
     flex-basis: 100%;
   }  
+  .founder-photo {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 576px) {
