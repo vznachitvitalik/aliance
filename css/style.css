@@ -415,6 +415,7 @@ body{
 }
 .clients-wrapper {
   display: flex;
+  gap: 50px;
 }
 .clients-content{
 flex-basis: 50%;
@@ -432,6 +433,26 @@ flex-basis: 50%;
   font-size: 16px;
   line-height: 160%;
   color: #292D33;
+}
+
+.clinets-logo-list {
+  flex-shrink:10;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.clinets-logo-item {
+  flex-basis: 33%;
+  border: 1px solid #EBEBF0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.clients-logo {
+  max-width: 100%;
+  width: 70px;
+  height: 70px;
 }
 @media (max-width:1700px) {
    html {
@@ -508,7 +529,6 @@ flex-basis: 50%;
     flex-grow: 1;
     justify-content: center;
   }
-
   .mobile-menu-toggle {
     width: 80px;
     height: 100%;
@@ -641,6 +661,9 @@ flex-basis: 50%;
    .trademark-cards {
     flex-direction: column;
    }
+   .clients-wrapper {
+    flex-direction: column;
+   }
 }
 
 @media (max-width: 768px) {
@@ -676,7 +699,12 @@ flex-basis: 50%;
   .trademark-card {
     grid-template-areas: 
     "logo title"
-    "text text"
-    ;
+    "text text";
+  }
+  .clients-list {
+    columns: 1;
+  }
+  .clinets-logo-item {
+    flex-basis: 50%;
   }
 }
