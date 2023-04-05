@@ -435,10 +435,11 @@ flex-basis: 50%;
   color: #292D33;
 }
 
-.clinets-logo-list {
+.clients-logo-list {
   flex-shrink:10;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 1;
  
 }
 .clinets-logo-item {
@@ -448,6 +449,11 @@ flex-basis: 50%;
   align-items: center;
   justify-content: center;
   padding: 16px;
+  filter: grayscale(100%); /*делает логотип серее*/
+}
+.clinets-logo-item:hover {
+  filter: grayscale(0);
+  transition: filter 0.2s;
 }
 .clients-logo {
   max-width: 100%;
