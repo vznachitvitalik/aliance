@@ -570,7 +570,7 @@ top: 0;
 left: 0;
 padding: 20px 30px;
 border: 1px solid #E4E4EB;
-background-color: transparent;
+background-color: inherit;
 
 }
 .input-group-label {
@@ -583,6 +583,7 @@ background-color: transparent;
   line-height: 160%;
   color: #828A99;
   transition: top 0.2s, left 0.2s, font-size 0.2s;
+  background-color: inherit;
 }
 .input:focus {
  border: 1px solid #5C8EE6;
@@ -745,11 +746,15 @@ border: none;
   background-color: rgba (40, 45, 51, 0.5);
   z-index: 10;
   display: flex;
+  transition: opacity 0.2s;
 }
 .modal.is-open {
   transform: translateX(0);
   visibility: visible;
   opacity: 1;
+}
+.modal.is-open, .modal-dialog {
+ transform: translateY(0); 
 }
 .modal-dialog {
 background-color: #fff;
@@ -757,6 +762,8 @@ margin: auto;
 max-width: 460px;
 padding: 40px 50px;
 position: relative;
+transform: translateY(-50%); 
+transition: transform 0.3s;
 }
 .modal-close {
   display: block;
@@ -783,13 +790,23 @@ position: relative;
 .modal-text {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 160%;
   color: #828A99;
+  margin-bottom: 30px;
 }
-.modal-input {
+.modal-input-group {
   background-color: #fff;
 }
+.modal-form-footer {
+  margin-top: 30px;
+}
+.modal-form-button {
+  margin-bottom: 24px;
+  width: 100%;
+  display: block;
+}
+
 @media (max-width:1700px) {
    html {
     font-size: 14px;

@@ -100,7 +100,7 @@
           <span>+7 (499) 686-10-14</span>
         </a>
       </div>
-      <button class="navbar-button button">
+      <button class="navbar-button button" data-toggle="modal">
         <svg class="button-icon" width="24" height="24">
           <use href="img/sprite.svg#phone">
           </use>
@@ -120,7 +120,9 @@
           <p class="header-text">
             Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от анализа существующих паттернов поведения.
           </p>
-          <div class="button button-details">Подробнее о компании</div>
+          <button class="button header-button" data-toggle="modal">
+            Подробнее о компании
+          </button>
         </div>
 
           <!-- основной блок слайдера-->
@@ -670,25 +672,25 @@
         </p>
         <form action="" class="modal-form">
           <div class="input-group-wrapper input-group-vertical">
-            <div class="input-group">
+            <div class="input-group modal-input-group">
               <input 
-                id="user-name" 
+                id="modal-user-name" 
                 type="text" 
                 class="input" 
                 placeholder=" "/>
-              <label class="input-group-label modal-input-label" for="user-name">Имя</label>
+              <label class="input-group-label modal-input-label" for="modal-user-name">Имя</label>
             </div>
-            <div class="input-group">
+            <div class="input-group modal-input-group">
               <input 
-              id="user-phone" 
+              id="modal-user-phone" 
               type="tel" 
               class="input" 
               placeholder=" " />
-              <label class="input-group-label modal-input-label" for="user-phone">Номер телефона</label>
+              <label class="input-group-label modal-input-label" for="modal-user-phone">Номер телефона</label>
             </div>
           </div>
-          <div class="cta-form-footer">
-            <button type="submit" class="button cta-form-button">Отправить заявку
+          <div class="modal-form-footer">
+            <button type="submit" class="button modal-form-button">Отправить заявку
             </button>
             <div class="notify">
               <svg class="notify-icon" width="14" height="14">
